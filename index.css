@@ -120,7 +120,6 @@ p, a, h3 {
 .aboutDescriptionDiv {
     /* border: 1px solid aqua; */
     width: 50%;
-    padding: 2%;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
