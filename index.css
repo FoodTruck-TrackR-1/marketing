@@ -69,7 +69,7 @@ header {
 }
 
 h1 {
-    font-size: 8rem;
+    font-size: 6.5rem;
     color: #6BCAE2;
     background: rgb(255, 255, 255, 0.8);
     margin: 14% 0;
@@ -81,9 +81,9 @@ h1 {
 .navBar nav {
    display: flex;
    justify-content: space-evenly;
-   border: 2px solid #ffffff;
    background: rgb(255, 255, 255, 0.8);
-   padding: 0 0 0.5%;
+   padding: 0 0 3%;
+   margin-top: 2%;
 }
 .navBar nav a {
    text-decoration: none;
@@ -98,9 +98,9 @@ h1 {
 
 /************** ABOUT styles start **************/
 .aboutDiv {
-    /* border: 1px solid red; */
-    margin: 5% 10%;
-    width: 80%;
+    border: 1px solid red;
+    margin: 5%;
+    width: 90%;
     display: flex;  
     justify-content: space-evenly;
 }
@@ -116,7 +116,8 @@ h1 {
 
 .aboutDescriptionDiv {
     border: 1px solid aqua;
-    width: 40%;
+    width: 50%;
+    /* padding: 3%; */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -124,16 +125,75 @@ h1 {
 
 div h2 {
     border: 1px solid green;
-    font-size: 4rem;
+    font-size: 5rem;
+    text-align: center;
 }
 
-
-
-
-
+div p {
+    font-size: 1.5rem;
+    text-align: center;
+}
 /************** ABOUT styles end **************/
 
+/************** FOOTER styles start **************/
 
+/* .reviews {
+    height: 65vh;
+    background-image: url(https://unsplash.com/photos/-4K1IMX_EQc/download?force=true&w=2400);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+} */
+
+.reviewSection {
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.reviewSection div {
+    width: 30%;
+    padding: 1%;
+    margin: 2%;
+    /* border: 1px solid red; */
+    text-align: center;
+    background: rgba(107,202,226, 0.3);
+}
+
+.reviewSection img {
+    border: 1px solid black;
+    width: 70%;
+}
+
+.footerNavBar nav {
+    display: flex;
+    justify-content: space-evenly;
+    background: rgba(107,202,226, 0.6);
+    padding: 2%;
+ }
+ .footerNavBar nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 3.5rem;
+ }
+ 
+ .footerNavBar nav a:hover {
+    color: #ff823A;
+ } 
+
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.icon img{
+    height: 10vh;
+}
+
+/************** FOOTER styles end **************/
 
 
 /************** MEDIA QUERIES styles start ***************/
