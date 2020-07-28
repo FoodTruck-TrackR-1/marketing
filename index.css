@@ -1,0 +1,317 @@
+/************** css reset start **************/
+/*  
+	CSS Reset by Eric Meyer - Released under Public Domain
+    http://meyerweb.com/eric/tools/css/reset/
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+} /************** css reset end **************/
+
+/************** general style rules start **************/
+html {
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}
+
+h1, h2 {
+    font-family: 'Bungee Shade', cursive;
+}
+
+p, a, h3 {
+    font-family: 'Montserrat', sans-serif;
+} /********* general style rules end *********/
+
+/************** HEADER styles start **************/
+.headerImg {
+    height: 90vh;
+    background-image: url(https://unsplash.com/photos/m6fYkq_P2Cc/download?force=true&w=1920);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid green; */
+}
+
+.homePageTitle {
+    font-size: 6.5rem;
+    color: #6BCAE2;
+    background: rgb(255, 255, 255, 0.8);
+    margin-top: 8%;
+    padding: 5%;
+    text-align: center;
+    /* border: 2px solid green; */
+}
+
+.navBar nav {
+    /* border: 1px solid orange; */
+    display: flex;
+   justify-content: space-between;
+   background: rgb(255, 255, 255, 0.8);
+   padding: 2%;
+   margin-top: 10%;
+}
+.navBar nav a {
+   text-decoration: none;
+   color: #6BCAE2;
+   font-size: 3rem;
+   /* border: 1px solid blue; */
+}
+
+.navBar nav a:hover {
+   color: #ff823A;
+}
+
+.links {
+    /* border: 1px solid red; */
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.signUp {
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+}
+
+/************** HEADER styles end **************/
+
+/************** ABOUT styles start **************/
+.aboutDiv {
+    /* border: 1px solid red; */
+    margin: 5%;
+    width: 90%;
+    display: flex;  
+    justify-content: space-evenly;
+}
+
+.imgDiv {
+    /* border: 3px solid orange; */
+    width: 40%;
+}
+
+.imgDiv img {
+    border-radius: 1em;
+}
+
+.aboutDescriptionDiv {
+    /* border: 1px solid aqua; */
+    width: 50%;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+div h2 {
+    /* border: 1px solid green; */
+    font-size: 5rem;
+    text-align: center;
+}
+
+div p {
+    font-size: 1.5rem;
+    text-align: center;
+}
+/************** ABOUT styles end **************/
+
+/************** FOOTER styles start **************/
+
+.reviewSection {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.reviewSection div {
+    width: 30%;
+    padding: 3%;
+    margin: 2%;
+    /* border: 1px solid red; */
+    text-align: center;
+    background: rgba(107,202,226, 0.3);
+}
+
+.reviewSection img {
+    /* border: 1px solid black; */
+    width: 70%;
+}
+
+.reviewSection p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 10%;
+    border-top: 2px dashed black;
+}
+
+span {
+    font-weight: 900;
+    font-size: 2rem;
+}
+
+.footerNavBar nav {
+    display: flex;
+    justify-content: space-between;
+    background: rgba(107,202,226, 0.8);
+    padding: 2%;
+ }
+ .footerNavBar nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 3rem;
+ }
+ 
+ .footerNavBar nav a:hover {
+    color: #ff823A;
+ } 
+
+
+.socialIcons {
+    display: flex;
+    justify-content: center;
+
+}
+
+.icon img{
+    height: 10vh;
+}
+
+/************** FOOTER styles end **************/
+
+/********* MEET THE TEAM PAGE styles start *********/
+
+ /* .aboutHeaderImg {
+    height: 90vh;
+    background-image: url(https://unsplash.com/photos/-4K1IMX_EQc/download?force=true&w=1920);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid green;
+} */
+
+.teamBody {
+    height: 90vh;
+    background-image: url(https://unsplash.com/photos/-4K1IMX_EQc/download?force=true&w=1920);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid green; */
+}
+
+#teamHeaderSection {
+    background: rgba(107,202,226, 0.8);
+}
+
+.teamPage { /* targets h1 styling */
+    font-size: 6.5rem;
+    color: #6BCAE2;
+    background: rgb(255, 255, 255, 0.9);
+    margin-top: 8%;
+    padding: 5%;
+    text-align: center;
+}
+
+.teamMates {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.teamMates div {
+    border: 3px solid #ffffff;
+    border-radius: 10%;
+    background: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2%;
+    padding: 3%;
+    width: 30%;
+    align-items: center;
+}
+
+.teamMates img {
+    border-radius: 50em;
+    /* border: 1px solid purple; */
+}
+
+.imgDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.imgDiv h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    margin-top: 5%;
+}
+
+.imgDiv h3 {
+    font-size: 1.5rem;
+}
+
+/* MEET THE TEAM PAGE styles end*/
+
+
+
+/************** MEDIA QUERIES styles start ***************/
+@media(max-width: 800px) {
+    header {
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+    header nav{
+        display: flex;
+        /* flex-direction: column; */
+        align-items: center;  
+    }
+    /* h1 {
+        font-size: 10rem;
+        margin: 0 auto;
+    } */
+    /* .navBar {
+        margin: 0 auto;
+    } */
+    /* .navBar nav a {
+        margin: 5%;
+        font-size: 4rem;
+    } */
+ 
+}
+    
+    /* @media(max-width: 500px) {
+
+    } */
+    
+    /* @media(max-width: 360px) {
+
+    } */
+    /************** MEDIA QUERIES styles end ***************/
