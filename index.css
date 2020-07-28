@@ -282,7 +282,7 @@ span {
 
 
 /************** MEDIA QUERIES styles start ***************/
-@media(max-width: 700px) {
+@media(max-width: 800px) {
 .signUp {
     width: 40%;
     display: flex;
@@ -295,7 +295,7 @@ span {
     }
 }
     
-@media(max-width: 500px) {
+@media(max-width: 600px) {
 .navBar nav {
     flex-direction: column;
     align-items: center;
@@ -316,6 +316,7 @@ span {
 .links {
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .aboutDiv {
@@ -347,7 +348,9 @@ div p {
 
 }
     
-    /* @media(max-width: 360px) {
-
-    } */
+/* @media(max-width: 375px) {
+.links {
+    width: 100%;
+}
+} */
     /************** MEDIA QUERIES styles end ***************/
