@@ -126,7 +126,6 @@ p, a, h3 {
 }
 
 div h2 {
-    /* border: 1px solid green; */
     font-size: 5rem;
     text-align: center;
 }
@@ -274,6 +273,11 @@ span {
 
 .imgDiv h3 {
     font-size: 1.5rem;
+}
+
+.imgDiv p {
+    margin-top: 5%;
+    font-size: 2rem;
 }
 
 /********* MEET THE TEAM PAGE styles end *********/
