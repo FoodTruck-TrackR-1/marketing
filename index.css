@@ -36,15 +36,19 @@ html {
 
 h1, h2 {
     font-family: 'Bungee Shade', cursive;
+    color: #303030;
 }
 
 p, a, h3 {
     font-family: 'Montserrat', sans-serif;
-} /********* general style rules end *********/
+    color: #303030;
+} 
+
+/********* general style rules end *********/
 
 /************** HEADER styles start **************/
 .headerImg {
-    height: 90vh;
+    height: 80vh;
     background-image: url(https://unsplash.com/photos/m6fYkq_P2Cc/download?force=true&w=1920);
     background-repeat: no-repeat;
     background-size: cover;
@@ -54,6 +58,7 @@ p, a, h3 {
     flex-direction: column;
     /* border: 2px solid green; */
 }
+
 
 .homePageTitle {
     font-size: 6.5rem;
@@ -102,74 +107,144 @@ p, a, h3 {
 /************** ABOUT styles start **************/
 .aboutDiv {
     /* border: 1px solid red; */
-    margin: 5%;
-    width: 90%;
-    display: flex;  
-    justify-content: space-evenly;
-}
-
-.imgDiv {
-    /* border: 3px solid orange; */
-    width: 40%;
-}
-
-.imgDiv img {
-    border-radius: 1em;
+    margin: 0 auto;
+    width: 80%;
 }
 
 .aboutDescriptionDiv {
     /* border: 1px solid aqua; */
-    width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    width: 80%; 
+    margin: 0 auto;
+    line-height: 3rem; 
 }
 
-div h2 {
-    font-size: 5rem;
-    text-align: center;
+.aboutContainer { /*holding the p and truck icon */
+    display: flex;
+    justify-content: center;
+    /* margin: 1%; */
+    /* border: 1px solid red; */
 }
 
-div p {
-    font-size: 1.5rem;
-    text-align: center;
+.aboutDescriptionDiv p {
+    font-size: 2rem;
+    text-align: justify;
+    padding: 1%;
+    /* border: 1px solid blue; */
+    width: 90%;
 }
+
+.foodTruckIcon {
+    height: 15vh;
+    width: 8%;
+    margin-right: 3%;
+    /* border: 1px solid yellow; */
+}
+
+
+
+/* .imgDiv {
+    border: 3px solid orange;
+    width: 50%;
+}
+
+.imgDiv img {
+    border-radius: 1em;
+    height: 80vh;
+} */
 /************** ABOUT styles end **************/
 
-/************** FOOTER styles start **************/
 
-.reviewSection {
+/************** FEATURES styles start **************/
+.sectionTitles {
+    font-size: 5rem;
+    width: 90%;
+    text-align: center;
+    margin: 5% auto 3%;
+    padding-top: 1%;
+    border-top: 3px double #303030;;
+   
+}
+
+.logoContainer {
+    /* border: 1px solid gray; */
+    display: flex;
+    margin: 0 auto 7%;
+    width: 90%;
+}
+
+.logoContainer object {
+    /* border: 1px solid green; */
+    width: 80%;
+    height: 35vh;
+    margin: 5%;
+}
+
+.objContainer {
+    /* border: 1px solid purple; */
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.featuresText {
+    /* border: 1px solid #303030; */
+    width: 90%;
+    margin: 5% 0;
+    padding: 5%;
+    font-size: 2rem;
+    text-align: center;
+    line-height: 3rem;
+
+}
+/************** FEATURES styles end **************/
+
+/************** TESTIMONIAL styles start **************/
+
+.reviewSection { /* flex box for reviews */
     /* border: 1px solid black; */
     display: flex;
     justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto 5%;
 }
 
 .reviewSection div {
     width: 30%;
-    padding: 3%;
+    padding: 2%;
     margin: 2%;
     /* border: 1px solid red; */
     text-align: center;
-    background: rgba(107,202,226, 0.3);
+    background: rgba(107,202,226, 0.7);
+    background-image: url(/60-lines.png);
+    border-radius: 5em;
 }
 
 .reviewSection img {
     /* border: 1px solid black; */
-    width: 70%;
+    width: 60%;
+    border-radius: 2em;
 }
 
 .reviewSection p {
     font-size: 1.5rem;
     text-align: center;
     margin-top: 10%;
-    border-top: 2px dashed black;
+    border-top: 2px dashed#303030;
+    line-height: 1.5em;
 }
 
 span {
     font-weight: 900;
     font-size: 2rem;
 }
+/************** TESTIMONIAL styles end **************/
 
+
+/************** FOOTER styles start **************/
 .footerNavBar nav {
     display: flex;
     justify-content: space-between;
@@ -226,16 +301,9 @@ span {
 }
 
 #teamHeaderSection {
-    background: rgba(107,202,226, 0.8);
-}
-
-.teamPage { /* targets h1 styling */
-    font-size: 6.5rem;
-    color: #6BCAE2;
-    background: rgb(255, 255, 255, 0.9);
-    margin-top: 8%;
-    padding: 5%;
-    text-align: center;
+    background: rgba(107,202,226, 0.9);
+    background-image: url(/60-lines.png);
+    /* border: 1px solid red; */
 }
 
 .teamMates {
@@ -247,8 +315,9 @@ span {
 
 .teamMates div {
     border: 3px solid #ffffff;
-    border-radius: 10%;
-    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5em;
+    background: rgba(255, 255, 255, 0.9);
+    background-image: url(/60-lines.png);
     margin-bottom: 2%;
     padding: 3%;
     width: 30%;
@@ -278,6 +347,7 @@ span {
 .imgDiv p {
     margin-top: 5%;
     font-size: 2rem;
+    text-align: center;
 }
 
 /********* MEET THE TEAM PAGE styles end *********/
@@ -286,7 +356,18 @@ span {
 
 /************** MEDIA QUERIES styles start ***************/
 @media(max-width: 800px) {
-.signUp {
+    .headerImg {
+        height: 85vh;
+    }
+
+.aboutDiv {
+    width: auto;
+}
+.footerNavBar nav {
+    padding: 5%;
+}
+
+    .signUp {
     width: 40%;
     display: flex;
     justify-content: space-around;
@@ -298,46 +379,44 @@ span {
     }
 }
     
-@media(max-width: 600px) {
+@media(max-width: 500px) {
+.headerImg {
+    height: 94vh;
+}
+
 .navBar nav {
     flex-direction: column;
     align-items: center;
     margin-top: 0;
 }
 
-.footerNavBar nav {
-    flex-direction: column;
-    align-items: center;
-    margin-top: 0;
-}
-
-.signUp {
-    flex-direction: column;
-    align-items: center;
-}
-
-.links {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
 .aboutDiv {
-    flex-direction: column;
-    align-items: center;
-}
-
-.imgDiv {
-    width: 80%;
+width: 80%;
 }
 
 .aboutDescriptionDiv {
-    width: 100%;
-    margin: 5%;
+    width: auto;
 }
 
-div p {
-    margin-top: 5%;
+.foodTruckIcon{
+    width: 5em;
+}
+
+.logoContainer {
+    flex-direction: column;
+    align-items: center;
+}
+
+.objContainer {
+    width: auto;
+}
+
+.featuresText {
+    margin-top: 0;
+}
+
+.sectionTitles {
+    width: 95%;
 }
 
 .reviewSection {
@@ -346,6 +425,72 @@ div p {
 }
 
 .reviewSection div {
+    width: 90%;
+    padding-top: 8%;
+}
+
+.reviewSection p {
+    margin: 8%;
+}
+
+.footerNavBar nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 3% 0 5%;
+}
+
+.footerNavBar a {
+    padding: 2%;
+}
+
+.links {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.signUp {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+/* .imgDiv {
+    width: 80%;
+} */
+}
+
+@media(max-width: 360px) {
+   .headerImg {
+       width: auto;
+   }
+
+.aboutContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 0;
+}
+
+.foodTruckIcon {
+    width: 6em;
+}
+
+.aboutContainer p {
+    text-align: center;
+}
+
+.sectionTitles {
+    font-size: 3rem;
+}
+
+.teamMates {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgDiv {
     width: 80%;
 }
 
