@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 } /************** CSS RESET end **************/
 
-/************** GENERAL style rules start **************/
+/********** GENERAL style rules start ********/
 html {
     font-size: 62.5%;
 }
@@ -46,7 +46,7 @@ p, a, h3, button {
 
 /********* GENERAL style rules end *********/
 
-/************** HEADER styles start **************/
+/*********** HEADER styles start ***********/
 .headerImg {
     height: auto;
     background-image: url(https://unsplash.com/photos/m6fYkq_P2Cc/download?force=true&w=1920);
@@ -62,16 +62,17 @@ p, a, h3, button {
 .homePageTitle {
     font-size: 6.5rem;
     color: #6BCAE2;
-    background: rgb(255, 255, 255, 0.8);
+    background: rgba(255, 255, 255, 0.8);
     margin-top: 8%;
     padding: 5%;
     text-align: center;
 }
 
+
 .navBar nav {
     display: flex;
    justify-content: space-between;
-   background: rgb(255, 255, 255, 0.8);
+   background: rgba(255, 255, 255, 0.8);
    padding: 2%;
    margin-top: 8%;
 }
@@ -132,7 +133,7 @@ p, a, h3, button {
 }
 /************** ABOUT styles end **************/
 
-/************** FEATURES styles start **************/
+/************ FEATURES styles start ************/
 .sectionTitles {
     font-size: 5rem;
     width: 90%;
@@ -209,11 +210,19 @@ span {
 /************** TESTIMONIAL styles end **************/
 
 /************** FOOTER styles start **************/
+/* footer {
+    border: 1px solid blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+} */
+
 .footerNavBar nav {
     display: flex;
     justify-content: space-between;
     background: rgba(107,202,226, 0.8);
-    padding: 2% 0 2%;
+    padding: 2%;
  }
 
  .footerNavBar nav a {
@@ -238,19 +247,17 @@ span {
 
 /********* MEET THE TEAM PAGE styles start *********/
 .teamBody {
-    height: 90vh;
     background-image: url(https://unsplash.com/photos/-4K1IMX_EQc/download?force=true&w=1920);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
 }
 
 #teamHeaderSection {
-    background: rgba(107,202,226, 0.9);
+    background: rgba(107,202,226, 0.8);
     background-image: url(/60-lines.png);
+    padding-top: 1%;
 }
 
 .teamMates {
