@@ -31,3 +31,7 @@ Icons
 SVG Illustrations
   
 	home page svg illustrations - (https://undraw.co/)
+	
+Netlify Status
+
+	[![Netlify Status](https://api.netlify.com/api/v1/badges/05e31b66-bd98-417f-823e-0736f353bf55/deploy-status)](https://app.netlify.com/sites/foodtrucktrackrapp/deploys)
