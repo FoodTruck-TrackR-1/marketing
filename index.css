@@ -1,4 +1,4 @@
-/************** css reset start **************/
+/************** CSS RESET start **************/
 /*  
 	CSS Reset by Eric Meyer - Released under Public Domain
     http://meyerweb.com/eric/tools/css/reset/
@@ -22,9 +22,9 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-} /************** css reset end **************/
+} /************** CSS RESET end **************/
 
-/************** general style rules start **************/
+/************** GENERAL style rules start **************/
 html {
     font-size: 62.5%;
 }
@@ -39,16 +39,16 @@ h1, h2 {
     color: #303030;
 }
 
-p, a, h3 {
+p, a, h3, button {
     font-family: 'Montserrat', sans-serif;
     color: #303030;
 } 
 
-/********* general style rules end *********/
+/********* GENERAL style rules end *********/
 
 /************** HEADER styles start **************/
 .headerImg {
-    height: 80vh;
+    height: auto;
     background-image: url(https://unsplash.com/photos/m6fYkq_P2Cc/download?force=true&w=1920);
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,7 +56,6 @@ p, a, h3 {
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    /* border: 2px solid green; */
 }
 
 
@@ -67,22 +66,20 @@ p, a, h3 {
     margin-top: 8%;
     padding: 5%;
     text-align: center;
-    /* border: 2px solid green; */
 }
 
 .navBar nav {
-    /* border: 1px solid orange; */
     display: flex;
    justify-content: space-between;
    background: rgb(255, 255, 255, 0.8);
    padding: 2%;
-   margin-top: 10%;
+   margin-top: 8%;
 }
+
 .navBar nav a {
    text-decoration: none;
    color: #6BCAE2;
    font-size: 3rem;
-   /* border: 1px solid blue; */
 }
 
 .navBar nav a:hover {
@@ -90,7 +87,6 @@ p, a, h3 {
 }
 
 .links {
-    /* border: 1px solid red; */
     width: 50%;
     display: flex;
     justify-content: space-evenly;
@@ -101,18 +97,15 @@ p, a, h3 {
     display: flex;
     justify-content: space-around;
 }
-
 /************** HEADER styles end **************/
 
 /************** ABOUT styles start **************/
 .aboutDiv {
-    /* border: 1px solid red; */
     margin: 0 auto;
     width: 80%;
 }
 
 .aboutDescriptionDiv {
-    /* border: 1px solid aqua; */
     display: flex;
     flex-direction: column;
     width: 80%; 
@@ -123,15 +116,12 @@ p, a, h3 {
 .aboutContainer { /*holding the p and truck icon */
     display: flex;
     justify-content: center;
-    /* margin: 1%; */
-    /* border: 1px solid red; */
 }
 
 .aboutDescriptionDiv p {
     font-size: 2rem;
     text-align: justify;
     padding: 1%;
-    /* border: 1px solid blue; */
     width: 90%;
 }
 
@@ -139,22 +129,8 @@ p, a, h3 {
     height: 15vh;
     width: 8%;
     margin-right: 3%;
-    /* border: 1px solid yellow; */
 }
-
-
-
-/* .imgDiv {
-    border: 3px solid orange;
-    width: 50%;
-}
-
-.imgDiv img {
-    border-radius: 1em;
-    height: 80vh;
-} */
 /************** ABOUT styles end **************/
-
 
 /************** FEATURES styles start **************/
 .sectionTitles {
@@ -163,49 +139,40 @@ p, a, h3 {
     text-align: center;
     margin: 5% auto 3%;
     padding-top: 1%;
-    border-top: 3px double #303030;;
-   
+    border-top: 3px double #303030;
 }
 
 .logoContainer {
-    /* border: 1px solid gray; */
     display: flex;
     margin: 0 auto 7%;
     width: 90%;
 }
 
 .logoContainer object {
-    /* border: 1px solid green; */
     width: 80%;
     height: 35vh;
     margin: 5%;
 }
 
 .objContainer {
-    /* border: 1px solid purple; */
     width: 34%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .featuresText {
-    /* border: 1px solid #303030; */
     width: 90%;
     margin: 5% 0;
     padding: 5%;
     font-size: 2rem;
     text-align: center;
     line-height: 3rem;
-
 }
 /************** FEATURES styles end **************/
 
 /************** TESTIMONIAL styles start **************/
-
 .reviewSection { /* flex box for reviews */
-    /* border: 1px solid black; */
     display: flex;
     justify-content: space-evenly;
     width: 90%;
@@ -216,7 +183,6 @@ p, a, h3 {
     width: 30%;
     padding: 2%;
     margin: 2%;
-    /* border: 1px solid red; */
     text-align: center;
     background: rgba(107,202,226, 0.7);
     background-image: url(/60-lines.png);
@@ -224,7 +190,6 @@ p, a, h3 {
 }
 
 .reviewSection img {
-    /* border: 1px solid black; */
     width: 60%;
     border-radius: 2em;
 }
@@ -243,14 +208,14 @@ span {
 }
 /************** TESTIMONIAL styles end **************/
 
-
 /************** FOOTER styles start **************/
 .footerNavBar nav {
     display: flex;
     justify-content: space-between;
     background: rgba(107,202,226, 0.8);
-    padding: 2%;
+    padding: 2% 0 2%;
  }
+
  .footerNavBar nav a {
     text-decoration: none;
     color: #ffffff;
@@ -261,33 +226,17 @@ span {
     color: #ff823A;
  } 
 
-
-.socialIcons {
-    display: flex;
-    justify-content: center;
-
+ .iconLinks {
+    background: #ffffff;
+    padding: 2%;
 }
 
-.icon img{
-    height: 10vh;
+.iconLinks div {
+    margin-left: 3%;
 }
-
 /************** FOOTER styles end **************/
 
 /********* MEET THE TEAM PAGE styles start *********/
-
- /* .teamHeaderImg {
-    height: 90vh;
-    background-image: url(https://unsplash.com/photos/-4K1IMX_EQc/download?force=true&w=1920);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    display: flex;
-    flex-direction: column;
-    border: 2px solid green;
-} */
-
 .teamBody {
     height: 90vh;
     background-image: url(https://unsplash.com/photos/-4K1IMX_EQc/download?force=true&w=1920);
@@ -297,13 +246,11 @@ span {
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
-    /* border: 2px solid green; */
 }
 
 #teamHeaderSection {
     background: rgba(107,202,226, 0.9);
     background-image: url(/60-lines.png);
-    /* border: 1px solid red; */
 }
 
 .teamMates {
@@ -324,14 +271,13 @@ span {
     align-items: center;
 }
 
-.teamMates img {
-    border-radius: 50em;
-    /* border: 1px solid purple; */
-}
-
 .imgDiv {
     display: flex;
     flex-direction: column;
+}
+
+.imgDiv img {
+    border-radius: 50em;
 }
 
 .imgDiv h2 {
@@ -345,49 +291,79 @@ span {
 }
 
 .imgDiv p {
-    margin-top: 5%;
+    margin-top: 10%;
     font-size: 2rem;
     text-align: center;
 }
-
 /********* MEET THE TEAM PAGE styles end *********/
-
 
 
 /************** MEDIA QUERIES styles start ***************/
 @media(max-width: 800px) {
-    .headerImg {
-        height: 85vh;
-    }
+.headerImg {
+    height: auto;
+}
 
 .aboutDiv {
     width: auto;
 }
-.footerNavBar nav {
-    padding: 5%;
+
+.navBar nav, .footerNavBar nav {
+  padding: 5% 0 5%;
 }
 
-    .signUp {
+.signUp {
     width: 40%;
     display: flex;
     justify-content: space-around;
-    }
+}
+
 .links {
     width: 60%;
     display: flex;
     justify-content: space-around;
-    }
+}
+
+.teamMates div {
+    width: 45%;
+}
+
+.imgDiv img {
+    width: 80%;
+    padding-top: 5%;
+}
+
+.imgDiv p {
+    padding: 5%;
+}
+
+.iconLinks {
+    padding: 3%;
+}
+
 }
     
 @media(max-width: 500px) {
 .headerImg {
-    height: 94vh;
+    height: auto;
+}
+
+.homePageTitle {
+    margin: 0;
+}
+
+.navBar nav {
+    background: rgba(255, 255, 255, 0.8);
 }
 
 .navBar nav {
     flex-direction: column;
     align-items: center;
     margin-top: 0;
+}
+
+.navBar a {
+    padding: 2%;
 }
 
 .aboutDiv {
@@ -416,7 +392,7 @@ width: 80%;
 }
 
 .sectionTitles {
-    width: 95%;
+    font-size: 3rem;
 }
 
 .reviewSection {
@@ -455,21 +431,39 @@ width: 80%;
     width: 100%;
 }
 
-/* .imgDiv {
+#teamHeaderSection {
+    background: rgba(255, 255, 255, 0.4);
+    background-image: url(/60-lines.png);
+    margin-bottom: 5%;
+}
+
+.teamMates div {
     width: 80%;
-} */
+}
+
+.imgDiv img {
+    width: 70%;
+    padding-top: 5%;
+}
+
+.imgDiv p {
+    padding: 5%;
+}
 }
 
 @media(max-width: 360px) {
-   .headerImg {
-       width: auto;
-   }
+.headerImg {
+       height: auto;
+}
+
+.homePageTitle {
+    font-size: 6rem;
+}
 
 .aboutContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 5% 0;
 }
 
 .foodTruckIcon {
@@ -484,16 +478,18 @@ width: 80%;
     font-size: 3rem;
 }
 
+.teamMates div{
+    width: auto;
+}
+
 .teamMates {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.imgDiv {
-    width: 80%;
+.iconLinks {
+    padding: 5%;
 }
-
 }
-
-    /************** MEDIA QUERIES styles end ***************/
+/************** MEDIA QUERIES styles end ***************/
