@@ -24,7 +24,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 } /************** CSS RESET end **************/
 
-/************** GENERAL style rules start **************/
+/********** GENERAL style rules start ********/
 html {
     font-size: 62.5%;
 }
@@ -46,7 +46,7 @@ p, a, h3, button {
 
 /********* GENERAL style rules end *********/
 
-/************** HEADER styles start **************/
+/*********** HEADER styles start ***********/
 .headerImg {
     height: auto;
     background-image: url(https://unsplash.com/photos/m6fYkq_P2Cc/download?force=true&w=1920);
@@ -133,7 +133,7 @@ p, a, h3, button {
 }
 /************** ABOUT styles end **************/
 
-/************** FEATURES styles start **************/
+/************ FEATURES styles start ************/
 .sectionTitles {
     font-size: 5rem;
     width: 90%;
